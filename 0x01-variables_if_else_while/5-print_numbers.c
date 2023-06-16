@@ -6,13 +6,14 @@
  * Return: Always 0 (Success)
  */
 
-/*prints all single digit numbers of base 10*/
+/*prints all single dihit numbers in base 10*/
 int main(void)
 {
-	int j;
-	for( j = '0' ; j <= '9'; j++)
+	int k;
+
+	for (k = 0; k <= 9; k++)
 	{
-		printf("%.1d", j);
+		printf("%d ", k);
 	}
 	printf("\n");
 		return (0);
