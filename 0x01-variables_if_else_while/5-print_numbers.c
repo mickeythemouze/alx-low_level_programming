@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Numbers
  *
  * Return: Always 0 (Success)
 */
@@ -15,5 +15,5 @@ int main(void)
 		printf("%d", n);
 	}
 	printf("\n");
-	return(0);
+	return (0);
 }
