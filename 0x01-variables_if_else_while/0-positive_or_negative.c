@@ -7,7 +7,7 @@
  * Return: Always 0 (Success)
  */
 
-/* This program will assign a random number to the variable n each time it is executed */
+/* This will assign a random number to variable n each time it's executed */
 int main(void)
 {
 	int n;
