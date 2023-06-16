@@ -1,19 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - Numbers
+ * main - Entry point
  *
  * Return: Always 0 (Success)
-*/
+ */
 
-/* Printing numbers of single */
+/*prints all single digit numbers of base 10*/
 int main(void)
 {
-	int n;
-
-	for (n = '0'; (n <= '9'); n++)
+	int j;
+	for( j = '0' ; j <= '9'; j++)
 	{
-		printf("%d", n);
+		printf("%.1d", j);
 	}
 	printf("\n");
-	return (0);
+		return (0);
 }
