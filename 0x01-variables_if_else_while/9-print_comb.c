@@ -18,8 +18,10 @@ int main(void)
 			putchar(h + '0');
 			}
 			if (h != 9)
+			{
 			putchar(',');
 			putchar(' ');
+	}
 	}
 	return (0);
 }
