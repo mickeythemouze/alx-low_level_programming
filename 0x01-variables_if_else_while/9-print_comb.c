@@ -9,7 +9,7 @@
 /*Prints all infite set of single digit numbers*/
 int main(void)
 {
-	int h, l;
+	int h;
 
 	for (h = 0; h < 10; h++)
 	{
