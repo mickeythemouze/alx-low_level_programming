@@ -11,9 +11,9 @@ int main(void)
 {
 	int f, k;
 
-	for (f = 0; f < 100; f++)
+	for (f = 0; f < 99; f++)
 	{
-		for (k = f; k < 100; k++)
+		for (k = f + 1; k < 100; k++)
 		{
 			putchar((f / 10) + '0');
 			putchar((f % 10) + '0');
