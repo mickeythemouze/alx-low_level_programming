@@ -17,11 +17,11 @@ int main(void)
 		{
 			putchar(f + '0');
 			putchar(k + '0');
-		}
 		if (f != 8 || k != f + 1)
 		{
 			putchar(',');
 			putchar(' ');
+		}
 		}
 	}
 	putchar('\n');
