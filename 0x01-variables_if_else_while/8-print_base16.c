@@ -9,17 +9,15 @@
 /*Prints all the numbers in base 16*/
 int main(void)
 {
-	int ch;
+	int h;
 
-	for (ch = 0; ch < 10; ch++)
-#First 9 numbers in the hexadecimal 0-9
-		{
-			putchar(ch + '0');
+	for (h = 0; h < 10; h++)
+	{
+			putchar(h + '0');
 		}
-	for (ch = 0; ch < 6; ch++)
-#Last 5 number in hexidecimal a-e
-		{
-			putchar(ch + 'a');
+	for (h = 0; h < 6; h++)
+	{
+			putchar(h + 'a');
 		}
 	putchar('\n');
 	return (0);
