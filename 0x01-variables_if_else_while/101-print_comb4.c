@@ -9,13 +9,13 @@
 /* prints all possible different combinations of three digits */
 int main(void)
 {
-	int o, p , t;
+	int o, p, t;
 
-	for (o = 0; o < 9; o++)
+	for (o = 0; o < 8; o++)
 	{
-	for ( p = o + 1; p < 10; p++)
+	for (p = o + 1; p < 9; p++)
 	{
-	for ( t = p + 1; t < 100; t++)
+	for (t = p + 1; t < 10; t++)
 	{
 		putchar(o + '0');
 		putchar(p + '0');
