@@ -6,7 +6,9 @@
  * @f: input
  * Return: Always 0(Success)
  */
-int print_last_digit(int j)
+int print_last_digit(int f)
 {
-	return (j % 10);
+	if (f < 0)
+		f = -f;
+	return (f % 10);
 }
