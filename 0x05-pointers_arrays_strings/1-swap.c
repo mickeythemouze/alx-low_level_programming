@@ -5,7 +5,6 @@
  *
  * @a: variable 1 to be swapped
  * @b: variable 2 to be swapped
- * @j: reference to a before dereferencing process
  */
 void swap_int(int *a, int *b)
 {
