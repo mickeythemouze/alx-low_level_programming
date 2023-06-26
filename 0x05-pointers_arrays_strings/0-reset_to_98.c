@@ -3,7 +3,7 @@
 /**
  * reset_to_98 - takes a pointer to an int param and updates its value
  *
- * @*n: pointer variable
+ * @n: pointer variable
  */
 void reset_to_98(int *n)
 {
