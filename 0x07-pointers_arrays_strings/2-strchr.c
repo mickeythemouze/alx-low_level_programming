@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * *_strchr - returns a pointer to the first occurence
@@ -13,6 +12,8 @@
 
 char *_strchr(char *s, char c)
 {
+	char *g = 0;
+
 	while (*s != '\0')
 	{
 		if (*s == c)
@@ -21,5 +22,5 @@ char *_strchr(char *s, char c)
 		}
 		s++;
 	}
-	return (NULL);
+	return (g);
 }
