@@ -2,8 +2,6 @@
 
 /**
  * *_strchr - returns a pointer to the first occurence
- * of the character c in the string s or NULL if the character
- * is not found
  *
  * @s: string
  * @c: character
