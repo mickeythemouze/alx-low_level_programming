@@ -1,26 +1,30 @@
 #include "main.h"
 
 /**
- * _strspn - returns the number of bytesin the initial
- * segment of s which consists only of bytes from accept
- *
- * @s: intial segment
- * @accept: consistent
- * Return: Always s
+ * _strspn - Entry point
+ * @s: input value.
+ * @accept: input value.
+ * Return: Always 0 (Success)
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = 0;
+	unsigned int n = 0;
+	int r;
 
-	while (*s && *accept)
+	while (*s)
 	{
-		if (*s == *accept)
-		{
-			count++;
-			accept++;
-		}
-		s++;
+	for (r = 0; accept[r]; r++)
+	{
+	if (*s == accept[r])
+	{
+	n++;
+	break;
 	}
-	return (count);
+	else if (accept[r + 1] == '\0')
+	return (n);
+	}
+	s++;
+	}
+	return (n);
 }
