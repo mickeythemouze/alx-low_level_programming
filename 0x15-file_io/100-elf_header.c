@@ -2,6 +2,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -31,7 +32,7 @@ void check_elf(unsigned char *e_ident)
 		if (e_ident[index] != 127 &&
 				e_ident[index] != 'E' &&
 				e_ident[index] != 'L' &&
-				e_ident[index] != 'F' &&)
+				e_ident[index] != 'F')
 		{
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
@@ -104,7 +105,7 @@ void print_data(unsigned char *e_ident)
 			printf("2's complement, big endian\n");
 			break;
 		default:
-			printf("<unknown: %x>\n", e_ident[EI_CLASS];
+			printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 	}
 }
 
@@ -145,7 +146,7 @@ void print_osabi(unsigned char *e_ident)
 			printf("UNIX - HP_UX\n");
 			break;
 		case ELFOSABI_NETBSD:
-			print("UNIX - NetBSD\n");
+			printf("UNIX - NetBSD\n");
 			break;
 		case ELFOSABI_LINUX:
 			printf("UNIX - Linux\n");
@@ -194,7 +195,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 {
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 		e_type >>= 8;
-		printf(" Type: ");
+	printf(" Type: ");
 	switch (e_type)
 	{
 		case ET_NONE:
